@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="85dp"
+            android:layout_height="80dp"
+            android:id="@+id/user_button"
+            android:src="@mipmap/user"
+            android:layout_marginLeft="59dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginBottom="71dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="moodEntry"/>
+
+        <ImageButton
+            android:layout_width="85dp"
+            android:layout_height="80dp"
+            android:id="@+id/supporter_button"
+            android:src="@mipmap/supporter"
+            android:layout_alignTop="@+id/user_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="67dp"
+            android:layout_marginEnd="67dp"
+            android:adjustViewBounds="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:id="@+id/welcome_text"
+            android:layout_marginTop="139dp"
+            android:typeface="normal"
+            android:textSize="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</LinearLayout>
